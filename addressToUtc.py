@@ -21,8 +21,8 @@ from selenium.common.exceptions import TimeoutException
 def iniciar_busqueda():
     # Obtener los valores de los campos de entrada
     url = 'http://3.12.247.123/closeup-app/public/'
-    email = 'mapas@test.com'
-    password = '123456'
+    email = 'maps@example.com'
+    password = '*****'
 
     # Ruta al chromedriver descargado
     PATH = r"C:\Users\cvelasquez\Documents\automatizaciones\busqueda_utcs\chromedriver.exe"
