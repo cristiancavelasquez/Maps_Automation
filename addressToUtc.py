@@ -5,15 +5,12 @@ Created on Fri Oct 13 13:43:40 2023
 @author: cvelasquez
 """
 
-import openpyxl
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
-from tkinter import Tk, Label, Entry, Button, messagebox
-import sys
 import time
 import pandas as pd
 from selenium.common.exceptions import TimeoutException
