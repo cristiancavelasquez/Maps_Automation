@@ -17,25 +17,35 @@ As you can imagine, this process needs to be repeated countless times for each p
 
 ## Solution - Development
 
-Para resolver este problema utilicé Python e implementé la libreria Selenium para automatizar una navegación web. La solucion de este problema se divide en dos archivos de código:
+To solve this problem, I used Python and implemented the Selenium library to automate web navigation. The solution to this problem is divided into two code files:
 
-  - Dada una dirección, hallar una UTC - Esto se llevó a cabo navegando la web app.
-  - Dadas unas cordenadas, encontrar una direccion "limpia" para poderla poner en la solución de arriba - Esto se elaboró con [Google Maps](https://www.google.com/maps).
+  - Finding a UTC for a given address - This was accomplished by navigating the web application.
+  - Given some coordinates, finding a "clean" address to use in the solution above - This was achieved using [Google Maps](https://www.google.com/maps).
 
-Esto se tuvo que resolver de esta manera, ya que la web app no permite buscar cordenadas, solo direcciones. Por otra parte, muchas veces como se puede ver en la primera imagen (muestra de datos) se proporcionan direcciones no muy explicitas, por lo que las cordenadas es la unica alternativa.
+The above had to be solved in this way because the web application doesn't allow searching by coordinates, only by addresses. Additionally, as can be seen in the first image (data sample), sometimes less explicit addresses are provided, making coordinates the only alternative.
 
-a continuacion voy a describir brevemente cada archivo de código y cómo implementé selenium para resolver el problema:
-
-### Address to UTC
-
-ddd
-
-### Coordinates to Adress
-
-dedee
-
+> [!IMPORTANT]
+> **Inside the  ```.py``` files, you should be able to find well-documented documentation in English for the process that was carried out in the creation of each script.**
 
 ## Results
+
+The result was an automated process created with Python, where you need to organize the addresses you want to search for in an Excel file, run the program, and obtain a final dataframe with the provided data along with the data that was found.
+
+- **Result of the script ```addressToUtc.pý```**
+  
+  imagen
+
+- **Result of the script ```coordsToAddress.py```**
+
+imagen
+
+With this structure, the person in charge can compare the initially entered address with the found address and determine visually whether they are a close match. If they are very similar, it is assumed that the UTC was assigned correctly. For those that are not, manual assignment is necessary.
+
+From the tests that have been conducted, this code successfully matches information in approximately 70% of cases. The remaining 30% needs to be assigned manually, but this tool has significantly reduced time and costs.
+
+
+Thank you for reading this markdown, I hope it has been very useful to you 😊.
+
 
 
 [^1]: A geographically delimited area for georeferencing purposes, based on the concept of a zip code. However, some modifications are made to it, with large cities being subdivided into smaller zones and small cities being treated as a single zone.
