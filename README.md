@@ -16,7 +16,7 @@ Currently, the person in charge has a web application that operates with a Googl
 
 As you can imagine, this process needs to be repeated countless times for each provided address, making it a highly demanding and time-consuming task.
 
-## Solution - Development
+## Development
 
 To solve this problem, I used Python and implemented the Selenium library to automate web navigation. The solution to this problem is divided into two code files:
 
